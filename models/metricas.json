@@ -1,0 +1,243 @@
+{
+  "fecha_ejecucion": "2026-11-15 21:28",
+  "n_resenas": 19946,
+  "por_app": {
+    "Yape": 3976,
+    "BCP": 3993,
+    "Interbank": 3993,
+    "BBVA": 3986,
+    "Scotiabank": 3998
+  },
+  "periodo": {
+    "Yape": [
+      "2026-09-21",
+      "2026-11-14"
+    ],
+    "BCP": [
+      "2026-05-27",
+      "2026-11-14"
+    ],
+    "Interbank": [
+      "2026-03-20",
+      "2026-11-14"
+    ],
+    "BBVA": [
+      "2026-06-01",
+      "2026-11-14"
+    ],
+    "Scotiabank": [
+      "2025-02-22",
+      "2026-11-14"
+    ]
+  },
+  "sentimiento": {
+    "modelo": "Regresión logística",
+    "preprocesamiento": "Sin preprocesar",
+    "f1_macro_cv": 0.648,
+    "f1_macro_test": 0.65,
+    "exactitud_test": 0.8549,
+    "reporte_test": {
+      "negativo": {
+        "precision": 0.8841245533435427,
+        "recall": 0.8960165545783756,
+        "f1-score": 0.8900308324768756,
+        "support": 1933.0
+      },
+      "neutro": {
+        "precision": 0.13671875,
+        "recall": 0.18518518518518517,
+        "f1-score": 0.15730337078651685,
+        "support": 189.0
+      },
+      "positivo": {
+        "precision": 0.9261971830985916,
+        "recall": 0.880085653104925,
+        "f1-score": 0.9025528410650563,
+        "support": 1868.0
+      },
+      "accuracy": 0.8548872180451128,
+      "macro avg": {
+        "precision": 0.6490134954807114,
+        "recall": 0.6537624642894952,
+        "f1-score": 0.649962348109483,
+        "support": 3990.0
+      },
+      "weighted avg": {
+        "precision": 0.8684182815516885,
+        "recall": 0.8548872180451128,
+        "f1-score": 0.8611851236506209,
+        "support": 3990.0
+      }
+    },
+    "comparacion": [
+      {
+        "preprocesamiento": "Sin preprocesar",
+        "modelo": "Naive Bayes",
+        "f1_macro": 0.5888,
+        "desv": 0.0035
+      },
+      {
+        "preprocesamiento": "Sin preprocesar",
+        "modelo": "Regresión logística",
+        "f1_macro": 0.648,
+        "desv": 0.0053
+      },
+      {
+        "preprocesamiento": "Sin preprocesar",
+        "modelo": "SVM lineal",
+        "f1_macro": 0.6051,
+        "desv": 0.0015
+      },
+      {
+        "preprocesamiento": "Limpieza + stopwords",
+        "modelo": "Naive Bayes",
+        "f1_macro": 0.5929,
+        "desv": 0.0012
+      },
+      {
+        "preprocesamiento": "Limpieza + stopwords",
+        "modelo": "Regresión logística",
+        "f1_macro": 0.6417,
+        "desv": 0.0084
+      },
+      {
+        "preprocesamiento": "Limpieza + stopwords",
+        "modelo": "SVM lineal",
+        "f1_macro": 0.6005,
+        "desv": 0.0022
+      },
+      {
+        "preprocesamiento": "Stemming",
+        "modelo": "Naive Bayes",
+        "f1_macro": 0.5943,
+        "desv": 0.0031
+      },
+      {
+        "preprocesamiento": "Stemming",
+        "modelo": "Regresión logística",
+        "f1_macro": 0.6444,
+        "desv": 0.0076
+      },
+      {
+        "preprocesamiento": "Stemming",
+        "modelo": "SVM lineal",
+        "f1_macro": 0.6018,
+        "desv": 0.002
+      },
+      {
+        "preprocesamiento": "Lematización",
+        "modelo": "Naive Bayes",
+        "f1_macro": 0.5937,
+        "desv": 0.0017
+      },
+      {
+        "preprocesamiento": "Lematización",
+        "modelo": "Regresión logística",
+        "f1_macro": 0.6414,
+        "desv": 0.0044
+      },
+      {
+        "preprocesamiento": "Lematización",
+        "modelo": "SVM lineal",
+        "f1_macro": 0.6039,
+        "desv": 0.002
+      }
+    ],
+    "pysentimiento": null
+  },
+  "reclamos": {
+    "cobertura_negativas_pct": 76.8
+  },
+  "temas": {
+    "n_temas": 3,
+    "etiquetas": [
+      "funcionar, abrir, actualizar",
+      "error, salir, entrar",
+      "ingresar, clave, pedir"
+    ],
+    "palabras": [
+      [
+        "funcionar",
+        "abrir",
+        "actualizar",
+        "actualizacion",
+        "servicio",
+        "ingresar",
+        "mantenimiento",
+        "pagar",
+        "fallar",
+        "quedar"
+      ],
+      [
+        "error",
+        "salir",
+        "entrar",
+        "dinero",
+        "dejar",
+        "lento",
+        "pago",
+        "problema",
+        "ingresar",
+        "falla"
+      ],
+      [
+        "ingresar",
+        "clave",
+        "pedir",
+        "tarjeta",
+        "instalar",
+        "dejar",
+        "permitir",
+        "salir",
+        "problema",
+        "llegar"
+      ]
+    ],
+    "busqueda": [
+      {
+        "temas": 3,
+        "perplejidad": 691.3184,
+        "coherencia_umass": -118.4123
+      },
+      {
+        "temas": 4,
+        "perplejidad": 773.0077,
+        "coherencia_umass": -119.1227
+      },
+      {
+        "temas": 5,
+        "perplejidad": 833.8947,
+        "coherencia_umass": -121.9083
+      },
+      {
+        "temas": 6,
+        "perplejidad": 908.9991,
+        "coherencia_umass": -127.6755
+      },
+      {
+        "temas": 7,
+        "perplejidad": 961.5985,
+        "coherencia_umass": -129.4413
+      },
+      {
+        "temas": 8,
+        "perplejidad": 1037.165,
+        "coherencia_umass": -132.0285
+      },
+      {
+        "temas": 9,
+        "perplejidad": 1103.1621,
+        "coherencia_umass": -136.341
+      },
+      {
+        "temas": 10,
+        "perplejidad": 1171.6099,
+        "coherencia_umass": -127.0269
+      }
+    ]
+  },
+  "lsa": {
+    "componentes": 150,
+    "varianza_explicada": 0.4788
+  }
+}
